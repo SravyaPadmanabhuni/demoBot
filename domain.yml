@@ -1,0 +1,49 @@
+version: "3.1"
+
+intents:
+  - greet
+  - hospital
+  - which
+  - about
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hai :)"
+
+  utter_hospital:
+  - text: "Sai Dental Care, Ram Tooth Care, Apple, Aravind Dental Clinic, Dental Studio, Dental Spa, Dental Hub, Dental Speciality Center, Dental Solutions, All Smiles Dental Care, Accu Smile :), Active Dental Care, Beyond Smiles Dental Care, Best Dental Care Center, Century Dental Care, DentCare, DentX, D-Care, ExcelDent, i-Smile Dental Care, Miracle Dental Clinic, OraCare, Peoples Dental Clinic, SMileOn, Vita Dental Clinic, Youdent, ZoomDental Hub."
+
+  utter_which:
+  - text: "SMileOn ;-) "
+
+  utter_about:
+  - text: "Dentist : Mr.Pawan
+           City : Bhimavaram
+           Timings : 8:00 AM to 10 PM
+           Mobile : 7755661534"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
